@@ -1,0 +1,339 @@
+* {
+    margin-top: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    scrollbar-width: none;
+}
+@media only screen and (max-width:640px){
+    body{
+        background-color:black;
+        box-sizing: border-box;
+    }
+    .container2 .enter{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height:300px;
+    }
+    .questions{
+        gap:40px;
+    }
+   
+
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.main {
+    background-image: url("Netflex by Harry/assets/backgrond.jpg");
+    height: 80vh;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center center;
+    background-size: max(1000px, 100vw);
+}
+
+.main .box {
+    height: 80vh;
+    width: 100%;
+    opacity: 0.3;
+    background-color: rgb(35, 31, 31);
+    position: absolute;
+    top: 0;
+    /* to avoid the box moving downwards */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 62px;
+    /* the maxwidth,margin,justifycontent is used to allign the buttons and logo to the position */
+}
+
+span img {
+    height: 4vh;
+    position: relative;
+    z-index: 10;
+    /* by mentioning the position and z-index it will pop out the text and makes it appear brighter */
+
+
+}
+
+div button {
+    background-color: white;
+    position: relative;
+    z-index: 10;
+}
+
+.headding {
+    font-family: "Martel Sans", sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+    padding: 0 20px;
+    font-weight: bolder;
+    /* we have calc function in html which is used to perform calculation  */
+}
+
+.headding> :first-child {
+    color: white;
+    font-weight: bolder;
+    font-size: 34px;
+    text-align: center;
+    position: relative;
+    /* always put space after class to write firstchild */
+
+}
+
+.headding> :nth-child(2) {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.headding> :nth-child(3) {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    /* the greater than symbol is used to tell the server that the style should be applied to immidiate first child */
+}
+
+.sepration {
+    height: 5px;
+    background-color: rgb(47, 46, 46);
+
+}
+
+.btn-en {
+    background-color: rgba(169, 152, 152, 0.397);
+    color: white;
+    font-weight: bold;
+    padding: 7px;
+}
+
+.btn-red-si {
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    padding: 7px;
+}
+
+.btn-red {
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    padding: 11px 36px;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 11px 36px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.2);
+    /* it is used to apply transparent as a background */
+    border: 2px solid white;
+    color: white;
+}
+.trending{
+    position:relative;
+    margin-left: 20px;
+}
+span.trend {
+    display: flex;
+    color: white;
+    font-weight: bold;
+    margin: auto;
+    padding: 27px;
+}
+
+.trending span {
+    font-size: 27px;
+}
+
+.movies {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    overflow-x: auto;
+
+}
+
+.poster {
+    position: relative;
+}
+
+.poster img {
+    width: 160px;
+    height: 220px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.poster img:hover {
+    transform: scale(1.1);
+}
+.numbers:hover {
+    transform: scale(1.1);
+}
+
+.numbers {
+    position: absolute;
+    top: 100px;
+    left: 8px;
+    color: white;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 25px;
+}
+.second{
+    display:flex;
+    flex-direction: column;
+}
+
+ span.money {
+    position: relative;
+    top: 60px;
+    color:white;
+}
+
+div.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+    padding: 25px;
+    overflow-x: auto;
+}
+
+.bill {
+    width:270px;
+    height:200px;
+    padding: 12px;
+    margin-left: 30px;
+    border: 2px solid black;
+    border-radius: 40px;
+    background-color: rgba(29, 43, 195, 0.619);
+    color:white;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.bill:hover {
+    transform: scale(1.1);
+}
+
+span.join{
+    margin-left: 15px;
+    color:white;
+    position:relative;
+    height: 290px;
+    top:10px;
+}
+div.container2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 30px;
+    gap: 34px;
+    padding: 16px;
+    overflow-x: auto;
+
+}
+.enter{
+    width:270px;
+    height: 200px;
+    padding:12px;
+    margin-left: 30px;
+    border-radius: 40px;
+    background-color:rgba(255, 255, 255, 0.211);
+    color:white;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.f{
+    color: white;
+}
+.questions .b1{
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: 10px;
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    border-radius:8px ;
+    width:80vw;
+    height:40px;
+    padding: 10px;
+    margin:auto;
+    font-size: 20px;
+    box-shadow: inset;
+    cursor: pointer;
+    
+}
+.questions .b1:hover {
+    transform: scale(1.1);
+}
+.headder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.headder span{
+
+    font-size: 17px;
+    color:white;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:200px;
+    margin-top: 50px;
+
+}
+ .phone{
+    display: flex;
+    flex-direction: column;
+    color:grey;
+    margin-left:200px;
+}
+.phone a{
+    color: grey;
+}
+footer a{
+    color:grey;
+
+}
+footer ul li{
+    text-decoration: none;
+}
+div.last{
+    margin-top: 20px;
+    margin-left: 200px;
+
+}
